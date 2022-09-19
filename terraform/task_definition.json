@@ -1,0 +1,30 @@
+[
+    {
+        "name": "openapi-ecs-container",
+       "image": "${aws_ecr_repository.ecr.repository_url}",
+        "cpu": 10,
+        "memory": 512,
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "ecs-log-group",
+            "awslogs-region": "us-east-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        },
+        "links": [],
+        "portMappings": [
+            { 
+                "hostPort": 5000,
+                "containerPort": 5000,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [],
+        "command": [],
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": []
+    }
+  ]
