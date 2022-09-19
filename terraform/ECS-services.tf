@@ -10,7 +10,7 @@ resource "aws_ecs_service" "service" {
   task_definition        = "${aws_ecs_task_definition.task_definition.arn}"        # Attaching Task to service
   load_balancer {
     container_name       = "openapi-ecs-container"                                  #"container_${var.component}_${var.environment}"
-    container_port       = "3000"
+    container_port       = "5000"
     target_group_arn     = "${aws_alb_target_group.ecs-target-group.arn}"         # attaching load_balancer target group to ecs
  }
   network_configuration {
