@@ -1,7 +1,7 @@
 [
     {
         "name": "openapi-ecs-container",
-       "image": "${aws_ecr_repository.ecr.repository_url}",
+       "image": "",
         "cpu": 10,
         "memory": 512,
         "logConfiguration": {
