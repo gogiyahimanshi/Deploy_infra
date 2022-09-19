@@ -30,8 +30,8 @@ resource "aws_iam_instance_profile" "ecs-instance-profile1" {
  }
 }
 
-resource "aws_iam_role" "ecs-service-role" {
-  name = "ecs-service-role"
+resource "aws_iam_role" "ecs-service-role1" {
+  name = "ecs-service-role1"
   path = "/"
   assume_role_policy = "${data.aws_iam_policy_document.ecs-service-policy.json}"
 }
