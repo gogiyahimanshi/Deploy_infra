@@ -1,7 +1,7 @@
 [
     {
         "name": "openapi-ecs-container",
-       "image": "442952623703.dkr.ecr.eu-west-1.amazonaws.com/swagger:ui",
+       "image": "442952623703.dkr.ecr.us-east-1.amazonaws.com/ecr-repo-name:latest",
         "cpu": 10,
         "memory": 512,
         "logConfiguration": {
