@@ -15,7 +15,7 @@
         "links": [],
         "portMappings": [
             { 
-                "hostPort": 5000,
+                "hostPort": 8888,
                 "containerPort": 5000,
                 "protocol": "tcp"
             }
